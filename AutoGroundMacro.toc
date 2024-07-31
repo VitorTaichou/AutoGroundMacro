@@ -1,0 +1,7 @@
+## Interface: 110000
+## Title: Auto Ground Macro
+## Notes: Generates automatically @cursor macros for your class! /agm help
+## Author: VitorTaichou
+## IconTexture: Interface\AddOns\AutoGroundMacro\icon
+## Version: 1.0.0
+AutoGroundMacro.lua
