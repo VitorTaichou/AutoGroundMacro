@@ -81,6 +81,8 @@ function SearchTargetLocationSpells()
                     CreatePersonalMacro(spellName)
                 elseif string.find(spellDescription, "Stuns all enemies within 8 yds for 3 sec.") ~= nil then -- Shadowfury - Warlock
                     CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, "Stuns all enemies within 10 yds for 3 sec.") ~= nil then -- Shadowfury - Warlock
+                    CreatePersonalMacro(spellName)
                 end
             end
         end
