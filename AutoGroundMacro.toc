@@ -3,5 +3,5 @@
 ## Notes: Generates automatically @cursor macros for your class! /agm help
 ## Author: VitorTaichou
 ## IconTexture: Interface\AddOns\AutoGroundMacro\icon
-## Version: 1.0.0
+## Version: 1.0.1
 AutoGroundMacro.lua

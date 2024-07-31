@@ -59,11 +59,27 @@ function SearchTargetLocationSpells()
 
             -- Create Macro
             if locale == "ptBR" then
-                if string.find(spellDescription, "local selecionado") ~= nil then
+                if string.find(spellDescription, " local selecionado") ~= nil then
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " dentro da área") ~= nil then
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " na área") ~= nil then
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " em um raio de") ~= nil then
                     CreatePersonalMacro(spellName)
                 end
             else
-                if string.find(spellDescription, "target location") ~= nil then
+                if string.find(spellDescription, "target location") ~= nil then -- Heroic Leap - Warrior
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " targeted location") ~= nil then -- Farsight - Shaman
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " within the area") ~= nil then -- Flamestrike - Mage
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, " in the area") ~= nil then -- Volley - Hunter
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, "d radius") ~= nil then -- Mass Dispel - Priest
+                    CreatePersonalMacro(spellName)
+                elseif string.find(spellDescription, "Stuns all enemies within 8 yds for 3 sec.") ~= nil then -- Shadowfury - Warlock
                     CreatePersonalMacro(spellName)
                 end
             end
